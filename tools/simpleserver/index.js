@@ -1,9 +1,10 @@
 import express from "express";
+import cors from 'cors';
 import { DictionaryService } from './dictionary.js';
 
 const SERVER_PORT = 3003
 const app = express()
-
+app.use(cors())
 
 const service = DictionaryService();
 

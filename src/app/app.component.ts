@@ -16,4 +16,12 @@ export class AppComponent {
   title = 'narri';
 
   faCoffee = faCoffee;
+
+  arr1 = Array<number | string>();
+  arr2 = [];
+
+
+  getItem = (item: number | undefined) => {
+    return item?.toString();
+  }
 }
