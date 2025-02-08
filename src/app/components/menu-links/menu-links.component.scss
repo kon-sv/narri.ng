@@ -1,0 +1,18 @@
+ul {
+  display: flex;
+  flex-flow: column;
+  min-width: fit-content;
+  align-items: flex-end;
+  gap: 10px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+
+  list-style: none;
+
+  li {
+    clear: both;
+    float: right;
+  }
+
+}
