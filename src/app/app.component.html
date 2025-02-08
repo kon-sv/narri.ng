@@ -179,34 +179,11 @@
 
 
   <div class="content">
-    <div>
-
-      <div class="container">
-        <div [style]="{'margin-top': '100px'}">
-          <app-menu-links></app-menu-links>
-        </div>
-        <div>
-          <div class="title">
-            <fa-icon id="logo" size="5x" [icon]="faCoffee" />
-            <h4>{{"Welcome, narri" | typingText}}</h4>
-          </div>
-
-
-          <div class="container lborder">
-            <!-- <div> -->
-            <!--   <div class="test" [style]="{'min-width': '200px'}"> -->
-            <!--     <div>{{"Test something else" | typingText}}</div> -->
-            <!--   </div> -->
-            <!-- </div> -->
-            <div class="test" id="router-viewport">
-              <router-outlet />
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
+    <app-desktop>
+    </app-desktop>
   </div>
+
+  <app-notification-container></app-notification-container>
 
   <div *ngIf="false" class="content">
     <div class="left-side">

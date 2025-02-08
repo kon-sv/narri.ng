@@ -14,8 +14,7 @@ const paginationFromReq = (req) => {
 }
 
 app.get('/index', async (req, res) => {
-  const pagination = paginationFromReq(req);
-  res.json(service.getSimpleRecordsIndex(...pagination))
+  res.json(service.getSimpleRecordsIndex())
 });
 
 app.get('/entries', async (req, res) => {

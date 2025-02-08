@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { routes } from '../../app.routes';
 
 @Component({
   selector: 'app-menu-links',
@@ -8,5 +9,6 @@ import { RouterModule } from '@angular/router';
   styleUrl: './menu-links.component.scss'
 })
 export class MenuLinksComponent {
+  routes = routes;
 
 }

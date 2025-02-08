@@ -1,0 +1,26 @@
+<div>
+  <div class="container">
+    <div [style]="{'margin-top': '100px'}">
+      <app-menu-links></app-menu-links>
+    </div>
+    <div>
+      <div class="title">
+        <fa-icon id="logo" size="5x" [icon]="faCoffee" />
+        <h4>{{"Welcome" | typingText}}</h4>
+      </div>
+
+
+      <div class="container lborder">
+        <!-- <div> -->
+        <!--   <div class="test" [style]="{'min-width': '200px'}"> -->
+        <!--     <div>{{"Test something else" | typingText}}</div> -->
+        <!--   </div> -->
+        <!-- </div> -->
+        <div class="test" id="router-viewport">
+          <router-outlet />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,12 +1,7 @@
 <ul>
+  @for (route of routes; track route.path) {
   <li>
-    <a routerLink="">Home</a>
+    <a [routerLink]="route.path">{{route.name}}</a>
   </li>
-  <li>
-    <a routerLink="history">History</a>
-  </li>
-
-  <li>
-    <a routerLink="debug">Debug</a>
-  </li>
+  }
 </ul>

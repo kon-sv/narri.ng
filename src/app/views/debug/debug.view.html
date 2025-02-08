@@ -1,12 +1,3 @@
-<h2>
-  Index
-</h2>
-<div  [ngStyle]="{'overflow-y': 'scroll', 'max-height': '100px'}">
-  <div *ngFor="let r of records()" [ngStyle]="{display: 'flex', gap: '15px'}">
-    <label>{{r.id}}</label>
-    <label>{{r.value}}</label>
-  </div>
-</div>
 
 <!-- @for (item of data | async; track item?.id) { -->
 <!--   <p>Test</p> -->

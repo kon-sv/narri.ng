@@ -1,0 +1,12 @@
+#notificationContainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 400px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding-right: 5px;
+}

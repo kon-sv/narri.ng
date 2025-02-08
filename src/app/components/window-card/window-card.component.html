@@ -1,0 +1,26 @@
+<!-- <div [style]="{'width': '200px', 'height': '100px'}"> -->
+<div>
+  <div class="container">
+    <div class="inner">
+      <div class="windowCardTitlbar" (ondragstart)="testDrag">
+        <div class="title">{{title}}</div>
+        <div class="actions">
+          <div class="action">
+            <fa-icon id="logo" size="xs" [icon]="faCircle" />
+          </div>
+          <div class="action">
+            <fa-icon id="logo" size="xs" [icon]="faSquare" />
+          </div>
+          <div class="action">
+            <fa-icon id="logo" size="xs" [icon]="faXmark" />
+          </div>
+        </div>
+      </div>
+      <div class="windowCardToolbar"></div>
+      <div class="windowCardContent">
+        <ng-content />
+      </div>
+    </div>
+  </div>
+
+</div>

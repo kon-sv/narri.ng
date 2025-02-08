@@ -1,0 +1,38 @@
+#router-viewport {
+  /* background: #eeeeee; */
+  padding: 1rem;
+}
+
+.page-split {
+  background: black;
+  height: 15rem;
+
+
+}
+
+
+
+#logo {
+  height: 100px;
+  width: 100px;
+  display: block;
+
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+
+}
+
+.container {
+  display: flex;
+  height: 400px;
+  gap: 5px;
+  min-width: 800px;
+}
+
+.lborder {
+  border-left: 1px solid black;
+}

@@ -1,0 +1,5 @@
+<div id="notificationContainer">
+  @for (popup of this.popupService.popups(); track popup.timestamp) {
+  <app-popup [popup]="popup"></app-popup>
+  }
+</div>
