@@ -1,22 +1,47 @@
+@use 'variables';
+
+
+:host {
+  /* display: block; */
+  /* height: fit-content; */
+  /* width: fit-content; */
+  height: 1000px;
+  position: absolute;
+  /* max-width: 600px; */
+}
+
+
+.windowOuter {
+  max-width: 900px;
+  display: flex;
+}
+
 .container {
   padding-top: 0;
   padding: 2px;
-  background: #abacdf;
+  /* background: variables.$windowBorder; # looks a bit better without this background*/
   border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 3px 25px 1px;
 
   /* &:hover { */
   /*   cursor: 'pointer'; */
   /* } */
 
   .inner {
-    background: white;
+
+    /* background: white; //depend on content background */
     border-radius: 10px 10px 10px 10px;
     cursor: 'pointer';
+
+    display: inherit;
+    flex-direction: column;
   }
 }
 
 .windowCardTitlbar {
-  background: #abacdf;
+
+  background: variables.$windowBorder;
+  opacity: 0.95;
   padding: 5px;
   height: 20px;
   border-radius: 10px 10px 0px 0px;
@@ -53,4 +78,30 @@
 .windowCardContent {
   padding: 10px;
   overflow: scroll;
+  flex: 1 1;
+
+  background: #271b29;
+  opacity: 0.95;
+
+  color: white;
+
+  a {
+    color: white;
+  }
+
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(132 94 94 / 30%);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #6f5274;
+    outline: 1px solid #6f5274;
+  }
 }

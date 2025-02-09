@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, computed, input, Input } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { faXmark, faSquare, faCircle } from '@fortawesome/free-solid-svg-icons';
@@ -12,12 +12,21 @@ import { faXmark, faSquare, faCircle } from '@fortawesome/free-solid-svg-icons';
 })
 export class WindowCardComponent {
   @Input() title: string = 'Title'
+  width = input(500);
+
+  windowStyle = computed(() => {
+    return {
+      'max-width': this.width().toString() + 'px',
+      // 'position': 'absolute'
+    }
+  })
 
   faXmark = faXmark;
   faSquare = faSquare;
   faCircle = faCircle;
 
   constructor() {
+    console.log(this.width);
   }
 
 

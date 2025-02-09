@@ -15,8 +15,6 @@ interface Record {
   styleUrl: './dictionary.view.scss'
 })
 export class DictionaryView {
-
-
   data?: Observable<any[]>;
   records = signal<Record[]>(Array<Record>())
 
