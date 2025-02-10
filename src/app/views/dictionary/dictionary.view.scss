@@ -1,0 +1,26 @@
+:host {
+  transition-duration: 500ms;
+  display: block;
+}
+
+.listingItem {
+  flex-direction: row;
+  display: flex;
+  gap: 15px;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #6f5274;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.listing {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  flex-wrap: wrap;
+  gap: 5px;
+}

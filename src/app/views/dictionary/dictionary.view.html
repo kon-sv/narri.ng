@@ -1,11 +1,10 @@
-<h2>
+<h4>
   Index
-</h2>
-<div [ngStyle]="{'overflow-y': 'scroll', 'max-height': '100px'}">
+</h4>
+<div [ngStyle]="" class="listing">
   @for (r of records(); track r.id) {
-  <div [ngStyle]="{display: 'flex', gap: '15px'}">
-    <label>{{r.id}}</label>
-    <label>{{r.value}}</label>
+  <div class="listingItem" [ngStyle]="{display: 'flex', gap: '15px', }">
+    <app-dictionary-list-item [item]="r"></app-dictionary-list-item>
   </div>
   }
 </div>

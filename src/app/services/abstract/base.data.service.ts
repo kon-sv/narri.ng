@@ -16,7 +16,8 @@ export abstract class BaseDataService<T> {
 
   private resourceUrl(path?: string) {
     const url = path ?? this.resouce;
-    return `${this.baseUrl}/${url}`;
+    const resource = this.resouce ? `/${this.resouce}` : '';
+    return `${this.baseUrl}${resource}/${url}`;
   }
 
   public getData(endpoint?: string): Observable<T> {

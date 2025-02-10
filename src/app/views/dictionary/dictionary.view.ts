@@ -2,6 +2,7 @@ import { Component, signal } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import { DictionaryService } from '../../services/data/dictionary.service';
 import { CommonModule, NgFor } from '@angular/common';
+import { DictionaryListItemComponent } from '../../components/dictionary/dictionary-list-item/dictionary-list-item.component';
 
 
 interface Record {
@@ -10,7 +11,7 @@ interface Record {
 
 @Component({
   selector: 'app-dictionary',
-  imports: [CommonModule, NgFor],
+  imports: [CommonModule, NgFor, DictionaryListItemComponent],
   templateUrl: './dictionary.view.html',
   styleUrl: './dictionary.view.scss'
 })
